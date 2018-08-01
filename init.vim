@@ -1,5 +1,7 @@
 call plug#begin()
 Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'Erichain/vim-monokai-pro'
 Plug 'sheerun/vim-polyglot'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -10,8 +12,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 
-colorscheme gruvbox
-set background=dark
+syntax on
+color dracula
+"set background=dark
 
 set hidden
 set number
